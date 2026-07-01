@@ -1,0 +1,256 @@
+/* ===========================
+   EDUCATION & CERTIFICATION SECTION
+=========================== */
+
+.edu-section {
+  padding: 120px 6%;
+  background: #050816;
+  color: #ffffff;
+}
+
+.edu-wrapper {
+  display: grid;
+  grid-template-columns: 0.9fr 1.7fr;
+  gap: 55px;
+  align-items: center;
+}
+
+/* LEFT INTRO */
+
+.education-label {
+  display: inline-block;
+  padding: 9px 20px;
+  border-radius: 30px;
+  background: rgba(59, 130, 246, 0.12);
+  border: 1px solid rgba(59, 130, 246, 0.35);
+  color: #60a5fa;
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin-bottom: 22px;
+}
+
+.edu-intro h2 {
+  font-size: 48px;
+  line-height: 1.15;
+  margin: 25px 0;
+  font-weight: 400;
+  color: #ffffff;
+}
+
+.edu-intro h2 strong {
+  color: #3b82f6;
+  font-weight: 400;
+}
+
+.edu-intro p {
+  color: #c7c7d9;
+  line-height: 1.8;
+  font-size: 16px;
+  max-width: 430px;
+  text-align: justify;
+}
+
+/* MAIN PANEL */
+
+.edu-panel {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  border: 1px solid rgba(59, 130, 246, 0.12);
+  border-radius: 18px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.03);
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.3);
+}
+
+.edu-column,
+.cert-column {
+  padding: 35px;
+}
+
+.edu-column {
+  border-right: 1px solid rgba(59, 130, 246, 0.12);
+}
+
+/* COLUMN TITLE */
+
+.column-title {
+  display: flex;
+  align-items: center;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+.column-title i {
+  width: 52px;
+  height: 52px;
+  display: grid;
+  place-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+
+  background: rgba(59, 130, 246, 0.12);
+  color: #60a5fa;
+  border: 1px solid rgba(59, 130, 246, 0.35);
+
+  transition: 0.35s ease;
+}
+
+.column-title h3 {
+  font-size: 24px;
+  color: #ffffff;
+}
+
+/* TIMELINE */
+
+.timeline {
+  position: relative;
+  padding-left: 35px;
+}
+
+.timeline::before {
+  content: "";
+  position: absolute;
+  left: 11px;
+  top: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(#3b82f6, #38bdf8);
+}
+
+/* TIMELINE CARD */
+
+.timeline-card {
+  position: relative;
+  padding: 22px;
+  margin-bottom: 22px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(59, 130, 246, 0.1);
+
+  border-radius: 15px;
+
+  transition: 0.35s ease;
+}
+
+.timeline-card::before {
+  content: "";
+  position: absolute;
+  left: -36px;
+  top: 30px;
+
+  width: 17px;
+  height: 17px;
+
+  background: #3b82f6;
+
+  border: 5px solid #081322;
+
+  border-radius: 50%;
+}
+
+.timeline-card:hover {
+  transform: translateY(-6px);
+  border-color: #3b82f6;
+  box-shadow: 0 15px 30px rgba(59, 130, 246, 0.15);
+}
+
+.timeline-card span {
+  color: #60a5fa;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.timeline-card h4 {
+  font-size: 19px;
+  margin: 10px 0 8px;
+  color: #ffffff;
+}
+
+.timeline-card .place {
+  color: #38bdf8;
+  margin-bottom: 10px;
+}
+
+.timeline-card p {
+  color: #c5c5d6;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* CERTIFICATES */
+
+.cert-list {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.cert-card {
+  width: 100%;
+  padding: 16px 18px;
+
+  background: rgba(255, 255, 255, 0.04);
+
+  border: 1px solid rgba(59, 130, 246, 0.1);
+
+  border-radius: 12px;
+
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  gap: 15px;
+
+  text-align: left;
+
+  cursor: pointer;
+
+  transition: 0.35s ease;
+
+  font-size: 15px;
+}
+
+.cert-card i {
+  color: #60a5fa;
+  font-size: 18px;
+}
+
+.cert-card span {
+  margin-left: auto;
+  font-size: 24px;
+  color: #60a5fa;
+}
+
+.cert-card:hover,
+.cert-card.active {
+  border-color: #3b82f6;
+  background: rgba(59, 130, 246, 0.08);
+  transform: translateX(6px);
+}
+
+.cert-card:hover i,
+.cert-card.active i {
+  color: #38bdf8;
+}
+
+/* CERTIFICATE PREVIEW */
+
+.certificate-preview {
+  margin-top: 25px;
+  padding: 14px;
+
+  background: rgba(59, 130, 246, 0.08);
+
+  border: 1px solid rgba(59, 130, 246, 0.25);
+
+  border-radius: 15px;
+}
+
+.certificate-preview img {
+  width: 100%;
+  border-radius: 10px;
+  background: #ffffff;
+}

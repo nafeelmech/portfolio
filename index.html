@@ -1,0 +1,1164 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Nafeel | Mechanical Engineering Portfolio</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/header.css" />
+    <link rel="stylesheet" href="css/hero.css" />
+    <link rel="stylesheet" href="css/about.css" />
+    <link rel="stylesheet" href="css/education.css" />
+    <link rel="stylesheet" href="css/experience.css" />
+    <link rel="stylesheet" href="css/skills.css" />
+    <link rel="stylesheet" href="css/cad.css" />
+    <link rel="stylesheet" href="css/project.css" />
+    <link rel="stylesheet" href="css/contact.css" />
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- Font Awesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
+
+    <!-- 3D model viewer -->
+    <script
+      type="module"
+      src="https://unpkg.com/@google/model-viewer/dist/model-viewer.min.js"
+    ></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  </head>
+
+  <button id="scrollTopBtn">
+    <i class="fa-solid fa-arrow-up"></i>
+  </button>
+
+  <div class="photo-modal" id="photoModal">
+    <div class="photo-modal-box">
+      <button class="photo-close" onclick="closePhotoGallery()">×</button>
+
+      <h3 id="photoModalTitle">Work Photos</h3>
+
+      <div class="photo-grid" id="photoGrid"></div>
+    </div>
+  </div>
+
+  <body>
+    <!-- LOADING SCREEN -->
+    <div id="loader">
+      <div class="loader-hud">
+        <div class="hud-ring ring-1"></div>
+        <div class="hud-ring ring-2"></div>
+        <div class="hud-ring ring-3"></div>
+        <div class="gear-core">
+          <i class="fa-solid fa-gear"></i>
+        </div>
+      </div>
+    </div>
+
+    <header class="header">
+      <div class="container nav-container">
+        <!-- Logo -->
+        <a href="#home" class="logo"> Nafeel<span>.</span> </a>
+
+        <!-- Navigation -->
+        <nav class="nav">
+          <ul class="nav-links">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#education">Education</a></li>
+            <li><a href="#experience">Experience</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#cad-design">CAD Design</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+
+        <!-- Hire Me Button -->
+        <a href="#contact" class="btn-hire"> Hire Me </a>
+      </div>
+    </header>
+
+    <section class="hero" id="home">
+      <div class="container hero-container">
+        <div class="hero-content">
+          <div class="hero-badge"><span></span> Hey, I'm Nafeel 👋</div>
+
+          <h1>
+            Production &<br />
+            <span>Design<br />Engineer</span>
+          </h1>
+
+          <p>
+            Mechanical Engineering Technology graduate passionate about CAD
+            design, manufacturing systems, and continuous improvement in modern
+            engineering.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="assets/Nafeel_CV.pdf" class="btn-primary">Download CV</a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat">
+              <h3>2026</h3>
+              <p>BEng (Tech) Graduate</p>
+            </div>
+
+            <div class="stat">
+              <h3>2+</h3>
+              <p>Industrial Internships</p>
+            </div>
+
+            <div class="stat">
+              <h3>5+</h3>
+              <p>CAD & Eng. Tools</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-image">
+          <div class="profile-orbit">
+            <div class="orbit orbit-one"></div>
+            <div class="orbit orbit-two"></div>
+            <div class="orbit orbit-three"></div>
+
+            <div class="profile-circle">
+              <img src="images/profile.jpg" alt="Nafeel" />
+            </div>
+
+            <div class="special-card">
+              <div class="card-icon">⚙</div>
+              <div>
+                <span>Specialization</span>
+                <h4>CAD & Manufacturing</h4>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT SECTION START -->
+    <section class="about" id="about">
+      <section id="about" class="about reveal"></section>
+      <div class="container about-container">
+        <!-- LEFT CONTENT -->
+        <div class="about-left">
+          <span class="about-label">About Me</span>
+
+          <h2>
+            Engineering Mindset,<br />
+            <span>Industry Ready.</span>
+          </h2>
+
+          <p>
+            I am a Mechanical Engineering Technology graduate from Lincoln
+            University College, passionate about production engineering, CAD
+            design, and modern manufacturing systems.
+          </p>
+
+          <p>
+            My experience includes hands-on exposure across production floors,
+            workshop environments, and maintenance operations, where I developed
+            practical engineering problem-solving skills.
+          </p>
+
+          <p>
+            I focus on applying engineering knowledge to real industrial
+            challenges, improving efficiency, and creating reliable mechanical
+            solutions.
+          </p>
+        </div>
+
+        <!-- RIGHT CARDS -->
+        <div class="about-right">
+          <div class="glow-circle"></div>
+
+          <div class="about-card">
+            <i class="fa-solid fa-cube"></i>
+            <h3>CAD & 3D Modeling</h3>
+            <p>SolidWorks, AutoCAD, Fusion 360 and Inventor.</p>
+          </div>
+
+          <div class="about-card">
+            <i class="fa-solid fa-chart-line"></i>
+            <h3>Lean & Six Sigma</h3>
+            <p>Process improvement and production optimization.</p>
+          </div>
+
+          <div class="about-card">
+            <i class="fa-solid fa-gears"></i>
+            <h3>Workshop Fabrication</h3>
+            <p>Machining, assembly and practical workshop skills.</p>
+          </div>
+
+          <div class="about-card">
+            <i class="fa-solid fa-code"></i>
+            <h3>Programming</h3>
+            <p>Python, automation and engineering computation.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ABOUT SECTION END -->
+
+    <section class="edu-section" id="education">
+      <section id="education" class="education reveal"></section>
+      <div class="edu-wrapper">
+        <!-- LEFT INTRO -->
+        <div class="edu-intro">
+          <span class="education-label">Education & Certification</span>
+          <h2>Built on a <strong>Solid Foundation.</strong></h2>
+          <p>
+            My academic journey in mechanical engineering has provided strong
+            foundations in design, manufacturing, and engineering
+            problem-solving. Along the way, I have also earned certifications to
+            support my growth in technology and innovation.
+          </p>
+        </div>
+
+        <!-- RIGHT MAIN PANEL -->
+        <div class="edu-panel">
+          <!-- EDUCATION TIMELINE -->
+          <div class="edu-column">
+            <div class="column-title">
+              <i class="fa-solid fa-graduation-cap"></i>
+              <h3>Education</h3>
+            </div>
+
+            <div class="timeline">
+              <div class="timeline-card">
+                <span>2024 – 2026</span>
+                <h4>
+                  Bachelor of Mechanical Engineering Technology with Honours
+                </h4>
+                <p class="place">Lincoln University College, Malaysia</p>
+              </div>
+
+              <div class="timeline-card">
+                <span>2023 - 2025</span>
+                <h4>Advanced Diploma in Mechanical Engineering</h4>
+                <p class="place">city & Guilds London Institute</p>
+              </div>
+
+              <div class="timeline-card">
+                <span>2020 – 2023</span>
+                <h4>Diploma in Production Technology</h4>
+                <p class="place">Sri Lanka German Training Institute</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- CERTIFICATIONS -->
+          <!-- CERTIFICATIONS -->
+          <div class="cert-column">
+            <div class="column-title">
+              <i class="fa-solid fa-award"></i>
+              <h3>Certifications</h3>
+            </div>
+
+            <div class="cert-list">
+              <button
+                class="cert-card active"
+                onclick="showCert('images/cert1.jpg', this)"
+              >
+                <i class="fa-solid fa-brain"></i>
+                Machine Learning for Engineers
+                <span>›</span>
+              </button>
+
+              <button
+                class="cert-card"
+                onclick="showCert('images/cert2.jpg', this)"
+              >
+                <i class="fa-solid fa-wrench"></i>
+                OHS Practices
+                <span>›</span>
+              </button>
+
+              <button
+                class="cert-card"
+                onclick="showCert('images/cert3.jpg', this)"
+              >
+                <i class="fa-solid fa-graduation-cap"></i>
+                City & Guilds
+                <span>›</span>
+              </button>
+            </div>
+
+            <div class="certificate-preview">
+              <img
+                id="certImage"
+                src="images/cert1.jpg"
+                alt="Certificate Preview"
+              />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="experience" id="experience">
+      <div class="container experience-wrapper">
+        <div class="experience-left">
+          <span class="experience-label">EXPERIENCE</span>
+          <h2>From Theory <span> to Work. </span></h2>
+
+          <p>
+            I have gained practical exposure in mechanical engineering
+            environments through workshop practice, industrial training, and
+            academic project work.
+          </p>
+
+          <div class="mini-list">
+            <div class="mini-item">
+              <i class="fa-solid fa-screwdriver-wrench"></i>
+              <div>
+                <h4>Hands-on Experience</h4>
+                <p>
+                  Practical training in workshops and industrial environments.
+                </p>
+              </div>
+            </div>
+
+            <div class="mini-item">
+              <i class="fa-solid fa-bullseye"></i>
+              <div>
+                <h4>Process Improvement</h4>
+                <p>Applied Lean, 5S and Kaizen for efficient operations.</p>
+              </div>
+            </div>
+
+            <div class="mini-item">
+              <i class="fa-solid fa-desktop"></i>
+              <div>
+                <h4>Design & Engineering</h4>
+                <p>
+                  Designed mechanical components and assemblies using CAD tools.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-line">
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="experience-right">
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-industry"></i></div>
+
+            <div class="exp-content">
+              <div class="exp-top">
+                <h3>Industrial Training</h3>
+                <span>Sep 2022- Mar 2023 (06 months)</span>
+              </div>
+              <h5>
+                <i class="fa-solid fa-location-dot"></i> Sri Lanka Ports
+                Authority Colombo
+              </h5>
+
+              <div class="exp-actions">
+                <button class="exp-btn" onclick="openExpModal('slpa')">
+                  View Details
+                </button>
+
+                <button
+                  class="exp-btn photo-btn"
+                  onclick="openPhotoGallery('slpa')"
+                >
+                  View Photos
+                </button>
+              </div>
+            </div>
+          </div>
+
+          <div class="exp-card">
+            <div class="exp-icon"><i class="fa-solid fa-industry"></i></div>
+            <div class="exp-content">
+              <div class="exp-top">
+                <h3>Intern - Manufacturing</h3>
+                <span>2023 - 2024 (05 months)</span>
+              </div>
+              <h5>
+                <i class="fa-solid fa-location-dot"></i> Hemas Consumer Brands
+                (HCB)
+              </h5>
+              <button class="exp-btn" onclick="openExpModal('hemas')">
+                View Details
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <div class="exp-modal" id="expModal">
+      <div class="exp-modal-box">
+        <button class="close-modal" onclick="closeExpModal()">&times;</button>
+        <div id="modalContent"></div>
+      </div>
+    </div>
+
+    <section class="skills" id="skills">
+      <section id="skills" class="skills reveal"></section>
+      <div class="container skills-container">
+        <div class="skills-header">
+          <span class="section-label">My Skills</span>
+
+          <h2>A Tool Box Turned for Real <span>Production.</span></h2>
+        </div>
+
+        <div class="skills-grid">
+          <div class="skill-box">
+            <div class="skill-icon">▧</div>
+            <div class="skill-content">
+              <h3>CAD & Design</h3>
+              <div class="small-line"></div>
+              <div class="skill-tags">
+                <span>SolidWorks</span>
+                <span>Autodesk Inventor</span>
+                <span>AutoCAD</span>
+                <span>Fusion 360</span>
+                <span>3D Modelling</span>
+                <span>Engineering Drawing</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-icon">⚙</div>
+            <div class="skill-content">
+              <h3>Mechanical Engineering</h3>
+              <div class="small-line"></div>
+              <div class="skill-tags">
+                <span>Machine Design</span>
+                <span>GD&T Basics</span>
+                <span>Mechanics</span>
+                <span>Thermodynamics</span>
+                <span>Materials</span>
+                <span>Design Analysis</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-icon">🏭</div>
+            <div class="skill-content">
+              <h3>Manufacturing</h3>
+              <div class="small-line"></div>
+              <div class="skill-tags">
+                <span>Machining</span>
+                <span>Workshop Practice</span>
+                <span>Fabrication</span>
+                <span>Production Systems</span>
+                <span>Maintenance</span>
+                <span>Process Improvement</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-box">
+            <div class="skill-icon">📈</div>
+            <div class="skill-content">
+              <h3>Quality & Lean</h3>
+              <div class="small-line"></div>
+              <div class="skill-tags">
+                <span>5S</span>
+                <span>Kaizen</span>
+                <span>Lean Manufacturing</span>
+                <span>QC Tools</span>
+                <span>TPM</span>
+                <span>Root Cause Analysis</span>
+                <span>Problem Solving</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="cad-section" id="cad-design">
+      <section id="cad-design" class="cad-section reveal"></section>
+      <div class="cad-container">
+        <div class="cad-header">
+          <div>
+            <span class="section-tag">CAD-DESIGNS</span>
+            <h2>From Concept to <span>CAD Models.</span></h2>
+            <p>
+              A collection of 3D models and mechanical designs created using
+              industry-leading parametric modelling tools with precision,
+              functionality and manufacturability in mind.
+            </p>
+          </div>
+        </div>
+
+        <div class="cad-features">
+          <div class="feature-box">
+            <i class="fa-solid fa-cube"></i>
+            <div>
+              <h4>3D Modeling</h4>
+              <p>Parametric & detailed</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fa-solid fa-crosshairs"></i>
+            <div>
+              <h4>High Precision</h4>
+              <p>Engineering accuracy</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fa-solid fa-gears"></i>
+            <div>
+              <h4>Design for Manufacturing</h4>
+              <p>DFM & practicality</p>
+            </div>
+          </div>
+
+          <div class="feature-box">
+            <i class="fa-solid fa-circle-check"></i>
+            <div>
+              <h4>Multiple Software</h4>
+              <p>Industry standard tools</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="cad-filter">
+          <div class="filter-buttons">
+            <button class="active">All Models</button>
+            <button>Mechanical Parts</button>
+            <button>Assemblies</button>
+            <button>Machine Components</button>
+            <button>Structures</button>
+          </div>
+
+          <select>
+            <option>All Software</option>
+            <option>SolidWorks</option>
+            <option>Fusion 360</option>
+            <option>Inventor</option>
+            <option>AutoCAD</option>
+          </select>
+        </div>
+
+        <div class="cad-grid">
+          <div class="cad-card">
+            <div class="cad-img">
+              <img src="images/Gear Box.png" alt="Gear Box" />
+            </div>
+            <!-- SOFTWARE LOGO -->
+            <span class="inventor-logo">
+              <img src="images/inventor.png" alt="Inventor" />
+            </span>
+
+            <div class="cad-info">
+              <h3>Gear Box<span>Autodesk Inventor</span></h3>
+              <p>
+                Gearbox containing a compound gear drive with a pinion, idler
+                gear, and output gear.
+              </p>
+              <div class="cad-tags">
+                <small>3D Model</small>
+                <small>Part Assembly</small>
+              </div>
+
+              <!--BUTTON FOR 3D VIEW -->
+              <button
+                class="view-3d-btn"
+                onclick="
+                  openCadModal(
+                    'Gearbox Assembly',
+                    'Autodesk Inventor',
+                    'models/g-assembly.glb',
+                  )
+                "
+              >
+                View 3D
+              </button>
+            </div>
+          </div>
+
+          <div class="cad-card">
+            <div class="cad-img">
+              <img src="images/end mill.png" alt="End Milling Cutter" />
+            </div>
+
+            <!-- SOFTWARE LOGO -->
+            <span class="inventor-logo">
+              <img src="images/inventor.png" alt="Inventor" />
+            </span>
+
+            <div class="cad-info">
+              <h3>End Milling Cutter<span>Autodesk Inventor</span></h3>
+              <p>CAD model of an end mill cutter.</p>
+              <div class="cad-tags">
+                <small>3D Model</small>
+              </div>
+
+              <!--BUTTON FOR 3D VIEW -->
+              <button
+                class="view-3d-btn"
+                onclick="
+                  openCadModal(
+                    'End Milling Cutter',
+                    'Autodesk Inventor',
+                    'models/end mill.glb',
+                  )
+                "
+              >
+                View 3D
+              </button>
+            </div>
+          </div>
+
+          <div class="cad-card">
+            <div class="cad-img">
+              <img src="images/p-gear.png" alt="Planetery gear" />
+            </div>
+
+            <!-- SOFTWARE LOGO -->
+            <span class="fusion360-logo">
+              <img src="images/Fusion360.png" alt="Fusion 360" />
+            </span>
+
+            <div class="cad-info">
+              <h3>Planatery Gear<span>Fusion 360</span></h3>
+              <p>
+                3D model of planatery gear consists of ring, sun and planetery
+                gears.
+              </p>
+              <div class="cad-tags">
+                <small>3D Model</small>
+                <small>Assembly</small>
+              </div>
+
+              <!--BUTTON FOR 3D VIEW -->
+              <button
+                class="view-3d-btn"
+                onclick="
+                  openCadModal(
+                    'Planatery Gear',
+                    'Autodesk Inventor',
+                    'models/p-gear.glb',
+                  )
+                "
+              >
+                View 3D
+              </button>
+            </div>
+          </div>
+
+          <div class="cad-card">
+            <div class="cad-img">
+              <img src="images/b-housing.png" alt="Bearing Housing" />
+            </div>
+
+            <!-- SOFTWARE LOGO -->
+            <span class="fusion360-logo">
+              <img src="images/inventor.png" alt="Autodesk Inventor" />
+            </span>
+
+            <div class="cad-info">
+              <h3>Bearing Housing<span>Autodesk Inventor</span></h3>
+              <p>Exploaded view of bearing housing assembly</p>
+              <div class="cad-tags">
+                <small>3D Model</small>
+                <small>Part Assembly</small>
+              </div>
+
+              <!--BUTTON FOR 3D VIEW -->
+              <button
+                class="view-3d-btn"
+                onclick="
+                  openCadModal(
+                    'Bearing Housing',
+                    'Autodesk Inventor',
+                    'models/Bearing Housing.glb',
+                  )
+                "
+              >
+                View 3D
+              </button>
+            </div>
+          </div>
+
+          <div class="cad-card">
+            <div class="cad-img">
+              <img src="images/h-cylinder.png" alt="Hydraulic Cylinder" />
+            </div>
+
+            <!-- SOFTWARE LOGO -->
+            <span class="fusion360-logo">
+              <img src="images/inventor.png" alt="Autodesk Inventor" />
+            </span>
+
+            <div class="cad-info">
+              <h3>Hydraulic Cylinder<span>Autodesk Inventor</span></h3>
+              <p>Hydraulic cylinder with complete component assembly</p>
+              <div class="cad-tags">
+                <small>3D Model</small>
+                <small>Part Assembly</small>
+              </div>
+
+              <!--BUTTON FOR 3D VIEW -->
+              <button
+                class="view-3d-btn"
+                onclick="
+                  openCadModal(
+                    'Hydraulic Cylinder',
+                    'Autodesk Inventor',
+                    'models/h-cylinder.glb',
+                  )
+                "
+              >
+                View 3D
+              </button>
+            </div>
+          </div>
+
+          <div class="cad-card">
+            <div class="cad-img">
+              <img src="images/pipe with flange.png" alt="Pipe with flange" />
+            </div>
+
+            <!-- SOFTWARE LOGO -->
+            <span class="inventor-logo">
+              <img src="images/inventor.png" alt="Autodesk Inventor" />
+            </span>
+
+            <div class="cad-info">
+              <h3>Pipe with Flange<span>Autodesk Inventor</span></h3>
+              <p>
+                3D modelling of pipe with flange using projected curve feature
+              </p>
+              <div class="cad-tags">
+                <small>3D Model</small>
+                <small>Project Curve</small>
+              </div>
+
+              <!--BUTTON FOR 3D VIEW -->
+              <button
+                class="view-3d-btn"
+                onclick="
+                  openCadModal(
+                    'Pipe with Flange',
+                    'Autodesk Inventor',
+                    'models/pipe with flange.glb',
+                  )
+                "
+              >
+                View 3D
+              </button>
+            </div>
+          </div>
+        </div>
+
+        <div class="cad-cta">
+          <div>
+            <i class="fa-solid fa-cube"></i>
+            <div>
+              <h3>Interested in working together?</h3>
+              <p>
+                I’m open to design engineering, CAD modeling and
+                production-related opportunities.
+              </p>
+            </div>
+          </div>
+          <a href="#contact"
+            >Let’s Connect <i class="fa-solid fa-arrow-right"></i
+          ></a>
+        </div>
+      </div>
+    </section>
+    <!-- ================= PROJECTS SECTION ================= -->
+    <section class="projects" id="projects">
+      <section id="projects" class="projects reveal"></section>
+      <div class="container">
+        <div class="section-top">
+          <div>
+            <span class="tag">PROJECTS</span>
+            <h2>Innovations Through <span>Engineering.</span></h2>
+            <p>
+              A showcase of academic projects and engineering work that reflect
+              my skills, knowledge and passion for problem solving.
+            </p>
+          </div>
+
+          <div class="project-stats">
+            <div><strong>1</strong><span>Research Project</span></div>
+            <div><strong>100+</strong><span>Hours Invested</span></div>
+            <div><strong>1</strong><span>Major Domain</span></div>
+            <div><strong>100%</strong><span>Academic Work</span></div>
+          </div>
+        </div>
+
+        <div class="projects-layout">
+          <!-- LEFT LIST -->
+          <aside class="project-list">
+            <h4>ALL PROJECTS</h4>
+
+            <div class="project-item active">
+              <span>01</span>
+              <div>
+                <h5>Feasibility Study: Small-Scale Plastic Pyrolysis System</h5>
+                <p>Academic Project · 2025</p>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <span>02</span>
+              <div>
+                <h5>Coming Soon</h5>
+                <p>Future Project</p>
+              </div>
+            </div>
+
+            <div class="project-item">
+              <span>03</span>
+              <div>
+                <h5>Coming Soon</h5>
+                <p>Future Project</p>
+              </div>
+            </div>
+          </aside>
+
+          <!-- MAIN CONTENT -->
+          <div class="project-content">
+            <div class="featured-project">
+              <div class="featured-text">
+                <span class="small-label">FEATURED PROJECT</span>
+                <h3>Feasibility Study: Small-Scale Plastic Pyrolysis System</h3>
+
+                <div class="meta">
+                  <span>📅 2025</span>
+                  <span>📘 Academic Project</span>
+                  <span>👥 Individual Project</span>
+                </div>
+
+                <div class="tools">
+                  <span>SolidWorks</span>
+                  <span>MS Project</span>
+                  <span>Excel</span>
+                  <span>Cost Analysis</span>
+                  <span>Energy Balance</span>
+                </div>
+
+                <p>
+                  A feasibility analysis of converting plastic waste into usable
+                  fuel through pyrolysis technology. The study evaluates
+                  technical, economic and environmental aspects for a
+                  small-scale system suitable for Sri Lanka.
+                </p>
+
+                <button class="project-btn" onclick="openProjectModal()">
+                  View Project Details →
+                </button>
+              </div>
+
+              <div class="featured-img">
+                <img
+                  src="images/pyrolysis-model.png"
+                  alt="Plastic Pyrolysis System"
+                />
+              </div>
+            </div>
+
+            <div class="design-section">
+              <h4>Key Designs & Models</h4>
+
+              <div class="design-grid">
+                <div>
+                  <img src="images/reactor-system.png" alt="" />
+                  <p>3D Model – Reactor System</p>
+                </div>
+                <div>
+                  <img src="images/process-flow.png" alt="" />
+                  <p>Process Flow Diagram</p>
+                </div>
+                <div>
+                  <img src="images/heat-exchanger.png" alt="" />
+                  <p>Heat Exchanger Design</p>
+                </div>
+                <div>
+                  <img src="images/assembly-view.png" alt="" />
+                  <p>System Assembly View</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- POPUP MODAL -->
+    <div class="project-modal" id="projectModal">
+      <div class="modal-box">
+        <button class="close-btn" onclick="closeProjectModal()">×</button>
+
+        <h3>Feasibility Study: Small-Scale Plastic Pyrolysis System</h3>
+
+        <div class="modal-tabs">
+          <button class="tab-btn active" onclick="showTab('Overview', this)">
+            Overview
+          </button>
+          <button class="tab-btn" onclick="showTab('Goal', this)">Goal</button>
+          <button class="tab-btn" onclick="showTab('Objectives', this)">
+            Objectives
+          </button>
+          <button class="tab-btn" onclick="showTab('Benefits', this)">
+            Benefits
+          </button>
+          <button class="tab-btn" onclick="showTab('Technology', this)">
+            Technology Used
+          </button>
+          <button class="tab-btn" onclick="showTab('Highlights', this)">
+            Highlights
+          </button>
+          <button class="tab-btn" onclick="showTab('Methodology', this)">
+            Methodology
+          </button>
+          <button class="tab-btn" onclick="showTab('Results', this)">
+            Results
+          </button>
+        </div>
+
+        <div class="tab-content active" id="Overview">
+          <h4>Project Overview</h4>
+          <p>
+            This project explores the technical and economic feasibility of a
+            small-scale plastic pyrolysis system to convert plastic waste into
+            usable liquid fuel through thermal decomposition in an oxygen-free
+            environment.
+          </p>
+        </div>
+
+        <div class="tab-content" id="Goal">
+          <h4>Project Goal</h4>
+          <p>
+            To design and evaluate a cost-effective and sustainable small-scale
+            pyrolysis system suitable for plastic waste management and energy
+            recovery applications in Sri Lanka.
+          </p>
+        </div>
+
+        <div class="tab-content" id="Objectives">
+          <h4>Objectives</h4>
+          <ul>
+            <li>Evaluate pyrolysis technology for plastic waste conversion.</li>
+            <li>Design a small-scale batch pyrolysis reactor system.</li>
+            <li>Analyze technical performance and fuel yield.</li>
+            <li>Conduct cost analysis and economic evaluation.</li>
+            <li>Assess environmental benefits and sustainability.</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="Benefits">
+          <h4>Key Benefits</h4>
+          <ul>
+            <li>Reduces plastic pollution and landfill dependency.</li>
+            <li>Converts waste plastic into valuable liquid fuel.</li>
+            <li>Supports sustainable waste-to-energy solutions.</li>
+            <li>Provides potential for small-scale industrial applications.</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="Technology">
+          <h4>Technologies Used</h4>
+          <ul>
+            <li>Pyrolysis process analysis</li>
+            <li>Heat transfer and mass transfer analysis</li>
+            <li>Material and energy balance</li>
+            <li>CAD modelling and system layout design</li>
+            <li>Cost estimation and economic analysis</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="Highlights">
+          <h4>Project Highlights</h4>
+          <ul>
+            <li>Designed a 30 L batch pyrolysis reactor system.</li>
+            <li>Developed reactor, condenser and system layout concepts.</li>
+            <li>Estimated fuel yield and system performance.</li>
+            <li>Performed cost-benefit and payback analysis.</li>
+            <li>Prepared CAD models and technical documentation.</li>
+          </ul>
+        </div>
+
+        <div class="tab-content" id="Methodology">
+          <h4>Methodology</h4>
+          <p>
+            The study followed a research-based methodology including literature
+            review, plastic type selection, process temperature analysis,
+            reactor concept design, heat exchanger design, fuel yield estimation
+            and economic feasibility evaluation.
+          </p>
+        </div>
+
+        <div class="tab-content" id="Results">
+          <h4>Results & Outcome</h4>
+          <p>
+            The analysis showed that small-scale plastic pyrolysis has strong
+            potential as a waste-to-energy solution. The proposed system
+            demonstrated possible fuel recovery, environmental benefit and
+            practical application for local waste management.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <section class="contact" id="contact">
+      <section id="contact" class="contact reveal"></section>
+      <div class="contact-container">
+        <div class="contact-left">
+          <span class="section-label">CONTACT</span>
+          <h2>Let's <span>Connect.</span></h2>
+          <p>
+            I’m always open to discussing engineering opportunities, projects,
+            collaborations, or professional connections.
+          </p>
+
+          <div class="contact-info">
+            <div class="info-item">
+              <i class="fa-regular fa-envelope"></i>
+              <div>
+                <h4>Email</h4>
+                <p>nafeel550@gmail.com</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-phone"></i>
+              <div>
+                <h4>Phone</h4>
+                <p>+94 77 942 2553</p>
+              </div>
+            </div>
+
+            <div class="info-item">
+              <i class="fa-solid fa-location-dot"></i>
+              <div>
+                <h4>Location</h4>
+                <p>Kandy, Sri Lanka</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-right">
+          <form id="contact-form">
+            <label>Name</label>
+            <input
+              type="text"
+              name="from_name"
+              placeholder="Your name"
+              required
+            />
+
+            <label>Email</label>
+            <input
+              type="email"
+              name="from_email"
+              placeholder="Your email"
+              required
+            />
+
+            <label>Subject</label>
+            <input type="text" name="subject" placeholder="Subject" required />
+
+            <label>Message</label>
+            <textarea
+              name="message"
+              placeholder="Your message"
+              required
+            ></textarea>
+
+            <button type="submit" id="send-btn">
+              Send Message <i class="fa-solid fa-arrow-right"></i>
+            </button>
+            <p id="form-status"></p>
+          </form>
+        </div>
+      </div>
+
+      <div class="contact-footer">
+        <div class="social-icons">
+          <a href="https://www.linkedin.com/in/mnnafeel" target="_blank"
+            ><i class="fa-brands fa-linkedin-in"></i
+          ></a>
+          <a href="#" target="_blank"><i class="fa-brands fa-github"></i></a>
+          <a href="mailto:nafeel550@gmail.com"
+            ><i class="fa-regular fa-envelope"></i
+          ></a>
+        </div>
+
+        <p>© 2026 MN Nafeel. All rights reserved.</p>
+      </div>
+    </section>
+
+    <!-- Modals and JavaScript -->
+
+    <div class="cad-modal" id="cadModal">
+      <div class="cad-modal-box">
+        <button class="close-modal" onclick="closeCadModal()">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <div class="cad-modal-viewer">
+          <model-viewer
+            id="cadModelViewer"
+            src=""
+            camera-controls
+            auto-rotate
+            shadow-intensity="1"
+            shadow-softness="1"
+            exposure="1"
+            environment-image="legacy"
+            tone-mapping="aces"
+            interaction-prompt="none"
+            camera-orbit="45deg 65deg auto"
+            field-of-view="20deg"
+            camera-target="auto auto auto"
+          >
+          </model-viewer>
+        </div>
+
+        <div class="cad-modal-info">
+          <h2 id="modalTitle">CAD Model</h2>
+          <span id="modalSoftware">SolidWorks</span>
+          <p id="modalDescription"></p>
+
+          <div class="modal-tags">
+            <small>Rotate</small>
+            <small>Zoom</small>
+            <small>Pan</small>
+            <small>3D View</small>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+    <script src="js/education.js"></script>
+    <script src="js/project.js"></script>
+    <script src="js/cad.js"></script>
+    <script src="js/experience.js"></script>
+    <script src="js/contact.js"></script>
+  </body>
+</html>
